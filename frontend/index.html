@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Catalog Recommender</title>
+  <link rel="stylesheet" href="/frontend/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Anime Streaming Catalog</h1>
+    <input id="searchInput" type="text" placeholder="Search anime title..." />
+  </header>
+
+  <main class="layout">
+    <section>
+      <h2>Catalog</h2>
+      <div id="catalogGrid" class="catalog-grid"></div>
+    </section>
+
+    <section id="detailSection" class="detail hidden">
+      <h2 id="detailTitle"></h2>
+      <p><strong>Genre:</strong> <span id="detailGenre"></span></p>
+      <p id="detailSynopsis"></p>
+
+      <h3>Recommended Anime</h3>
+      <div id="recommendedGrid" class="catalog-grid"></div>
+    </section>
+  </main>
+
+  <script src="/frontend/script.js"></script>
+</body>
+</html>
